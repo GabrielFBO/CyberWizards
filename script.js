@@ -197,13 +197,13 @@ if (contactForm) {
           =========================================================
         */
 
-        // GA4 (vamos ativar depois)
-        if (typeof gtag === "function") {
+        // GA4 (Manter desativado, pois já tem no HTML)
+        /*if (typeof gtag === "function") {
           gtag("event", "generate_lead", {
             form_name: "contact_form",
             page_location: window.location.href
           });
-        }
+        }*/
 
         // Meta Pixel (vamos ativar depois)
         /*
