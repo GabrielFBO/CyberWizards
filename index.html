@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!--
+    TÍTULO SEO:
+    É o texto que aparece na aba do navegador e ajuda no Google.
+  -->
+  <title>CyberWizards | Academia Virtual de Web Development</title>
+
+  <!--
+    META DESCRIPTION:
+    Resumo da página para mecanismos de busca e compartilhamentos.
+  -->
+  <meta
+    name="description"
+    content="CyberWizards é uma academia virtual de desenvolvimento web completo. Aprenda HTML, CSS, JavaScript, responsividade, projetos reais e evolua para nível expert."
+  />
+
+  <!--
+    PALAVRAS-CHAVE:
+    Hoje têm pouco peso em SEO, mas podem ser usadas em projetos didáticos.
+  -->
+  <meta
+    name="keywords"
+    content="web development, curso de programação, html css javascript, academia virtual, front-end, desenvolvimento web"
+  />
+
+  <!--
+    OPEN GRAPH:
+    Controla como a página aparece ao ser compartilhada em WhatsApp, Facebook e LinkedIn.
+    Depois você pode trocar a imagem por uma arte real do projeto.
+  -->
+  <meta property="og:title" content="CyberWizards | Academia Virtual de Web Development" />
+  <meta
+    property="og:description"
+    content="Domine o desenvolvimento web completo com uma experiência imersiva, prática e orientada a projetos."
+  />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://seudominio.com" />
+  <meta property="og:image" content="https://seudominio.com/og-image.jpg" />
+
+  <!--
+    TWITTER / X CARD:
+    Mesma lógica do Open Graph, mas voltado para o X/Twitter.
+  -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="CyberWizards | Academia Virtual de Web Development" />
+  <meta
+    name="twitter:description"
+    content="Aprenda desenvolvimento web completo com trilha prática, projetos e suporte."
+  />
+  <meta name="twitter:image" content="https://seudominio.com/og-image.jpg" />
+
+  <!--
+    FONTS:
+    Cinzel = elegante e com ar gótico, mas ainda legível.
+    Inter = ótima para leitura no corpo do site.
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Inter:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- ARQUIVO DE ESTILOS -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Google Analytics (GA4) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-HTSLSJSE53"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+
+  gtag('js', new Date());
+
+  // CONFIGURAÇÃO DO GA4
+  gtag('config', 'G-HTSLSJSE53');
+</script>
+
+  <!--
+    ============================
+    ESPAÇO RESERVADO PARA META PIXEL
+    ============================
+    Quando formos configurar, entra aqui o script oficial do Pixel.
+
+    Exemplo:
+    <script>
+      !function(f,b,e,v,n,t,s){...}
+      fbq('init', '1234567890');
+      fbq('track', 'PageView');
+    </script>
+  -->
+
+  <!--
+    SCHEMA / JSON-LD:
+    Ajuda mecanismos de busca a entenderem melhor o tipo do seu projeto.
+    Aqui usamos "EducationalOrganization" porque faz sentido para uma academia virtual.
+  -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "EducationalOrganization",
+    "name": "CyberWizards",
+    "description": "Academia virtual de desenvolvimento web completo com foco em prática, projetos e evolução profissional.",
+    "url": "https://seudominio.com",
+    "logo": "https://seudominio.com/logo.png",
+    "sameAs": []
+  }
+  </script>
+</head>
+<body>
+  <!--
+    FUNDO DECORATIVO:
+    Esses elementos ajudam a criar o clima de magia + cibernética.
+    Eles não são conteúdo principal; são elementos visuais.
+  -->
+  <div class="page-glow glow-1"></div>
+  <div class="page-glow glow-2"></div>
+  <div class="page-grid"></div>
+
+  <!--
+    PARTÍCULAS FLUTUANTES:
+    O JavaScript criará pequenos orbes/runas digitais dinamicamente aqui dentro.
+  -->
+  <div class="floating-particles" id="floatingParticles" aria-hidden="true"></div>
+
+  <!-- CABEÇALHO FIXO -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#hero" class="brand">
+        <span class="brand-icon">✦</span>
+        <span class="brand-text">CyberWizards</span>
+      </a>
+
+      <nav class="main-nav" aria-label="Navegação principal">
+        <a href="#about">Sobre</a>
+        <a href="#journey">Trilha</a>
+        <a href="#benefits">Benefícios</a>
+        <a href="#contact">Contato</a>
+      </nav>
+
+      <a href="#contact" class="btn btn-sm btn-outline">Começar</a>
+    </div>
+  </header>
+
+  <main>
+    <!--
+      HERO SECTION:
+      A primeira dobra precisa explicar rapidamente:
+      - o que é
+      - para quem é
+      - qual transformação entrega
+      - qual ação o usuário deve tomar
+    -->
+    <section class="hero" id="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">ACADEMIA VIRTUAL DE WEB DEVELOPMENT</p>
+
+          <h1 class="hero-title">
+            Torne-se um
+            <span class="highlight">mago do código</span>
+            e domine o web coding completo
+          </h1>
+
+          <p class="hero-description">
+            A CyberWizards é uma experiência de aprendizado imersiva para quem quer sair do zero,
+            construir projetos reais e evoluir até um nível profissional em HTML, CSS, JavaScript,
+            responsividade, lógica, interfaces modernas e estrutura de sites prontos para o mundo real.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#contact" class="btn btn-primary" id="heroPrimaryCta">Quero me tornar um mago</a>
+            <a href="#journey" class="btn btn-secondary">Ver a trilha de evolução</a>
+          </div>
+
+          <ul class="hero-highlights">
+            <li>Projetos práticos e guiados</li>
+            <li>Estrutura pensada para sites reais</li>
+            <li>Base pronta para SEO, analytics e conversão</li>
+          </ul>
+        </div>
+
+        <!--
+          CARD VISUAL DA HERO:
+          Serve para enriquecer a LP sem precisar de imagem externa.
+          Ele passa a sensação de painel / grimório tecnológico.
+        -->
+        <div class="hero-visual reveal delay-1" aria-hidden="true">
+          <img src="imagens/wizard.png" alt="Cyber Wizard" class="hero-image">
+          
+        </div>
+      </div>
+    </section>
+
+    <!-- SOBRE -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="section-tag">O QUE É A CYBERWIZARDS</p>
+          <h2>Uma academia virtual para transformar curiosidade em habilidade real</h2>
+          <p>
+            Em vez de conteúdo solto e confuso, a proposta aqui é oferecer uma jornada clara:
+            fundamentos, prática, construção de projetos e visão profissional sobre como um site
+            moderno funciona de verdade.
+          </p>
+        </div>
+
+        <div class="feature-grid">
+          <article class="feature-card reveal">
+            <div class="feature-icon">✧</div>
+            <h3>Base sólida</h3>
+            <p>Aprenda HTML, CSS e JavaScript entendendo o porquê de cada parte, não apenas copiando código.</p>
+          </article>
+
+          <article class="feature-card reveal delay-1">
+            <div class="feature-icon">⬢</div>
+            <h3>Projetos reais</h3>
+            <p>Desenvolva páginas modernas e funcionais com foco em responsividade, estrutura e conversão.</p>
+          </article>
+
+          <article class="feature-card reveal delay-2">
+            <div class="feature-icon">✦</div>
+            <h3>Visão profissional</h3>
+            <p>Entenda SEO, métricas, formulários, performance e como preparar um site para produção.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- TRILHA -->
+    <section class="section section-alt" id="journey">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="section-tag">TRILHA DE EVOLUÇÃO</p>
+          <h2>Do primeiro feitiço ao domínio completo da web</h2>
+        </div>
+
+        <div class="timeline">
+          <article class="timeline-item reveal">
+            <span class="timeline-step">01</span>
+            <div class="timeline-content">
+              <h3>Fundamentos da estrutura web</h3>
+              <p>Entenda HTML semântico, organização de conteúdo, acessibilidade básica e estrutura profissional.</p>
+            </div>
+          </article>
+
+          <article class="timeline-item reveal delay-1">
+            <span class="timeline-step">02</span>
+            <div class="timeline-content">
+              <h3>Design e responsividade</h3>
+              <p>Aprenda CSS moderno, layout com Flexbox e Grid, animações e adaptação para telas diferentes.</p>
+            </div>
+          </article>
+
+          <article class="timeline-item reveal delay-2">
+            <span class="timeline-step">03</span>
+            <div class="timeline-content">
+              <h3>Interatividade com JavaScript</h3>
+              <p>Crie comportamento real para botões, formulários, menus, animações e componentes dinâmicos.</p>
+            </div>
+          </article>
+
+          <article class="timeline-item reveal">
+            <span class="timeline-step">04</span>
+            <div class="timeline-content">
+              <h3>Projetos prontos para produção</h3>
+              <p>Monte páginas com SEO, espaços para analytics, pixel, captura de leads e estrutura de publicação.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- BENEFÍCIOS -->
+    <section class="section" id="benefits">
+      <div class="container benefits-grid">
+        <div class="benefits-copy reveal">
+          <p class="section-tag">POR QUE ENTRAR</p>
+          <h2>Uma experiência feita para atrair, ensinar e impulsionar</h2>
+          <p>
+            A CyberWizards combina estética marcante com lógica prática. O aluno não apenas aprende a codar:
+            aprende a pensar como alguém que constrói experiências digitais de verdade.
+          </p>
+
+          <ul class="benefits-list">
+            <li><span>✓</span> Método visual, prático e progressivo</li>
+            <li><span>✓</span> Projetos com aparência profissional</li>
+            <li><span>✓</span> Base pronta para mercado e freelas</li>
+            <li><span>✓</span> Clareza sobre o que faz um site funcionar</li>
+          </ul>
+        </div>
+
+        <div class="stats-panel reveal delay-1">
+          <div class="stat-card">
+            <strong>HTML</strong>
+            <span>Estrutura</span>
+          </div>
+          <div class="stat-card">
+            <strong>CSS</strong>
+            <span>Interface</span>
+          </div>
+          <div class="stat-card">
+            <strong>JS</strong>
+            <span>Interação</span>
+          </div>
+          <div class="stat-card">
+            <strong>SEO + Tracking</strong>
+            <span>Mundo real</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA FINAL -->
+    <section class="section cta-section">
+      <div class="container cta-box reveal">
+        <p class="section-tag">PRONTO PARA EVOLUIR?</p>
+        <h2>Desperte seu potencial e comece sua jornada na CyberWizards</h2>
+        <p>
+          Entre em contato para conhecer a proposta, tirar dúvidas e dar o primeiro passo rumo ao desenvolvimento web completo.
+        </p>
+        <a href="#contact" class="btn btn-primary" id="finalCta">Quero saber mais</a>
+      </div>
+    </section>
+
+    <!-- CONTATO -->
+    <section class="section section-alt" id="contact">
+      <div class="container contact-grid">
+        <div class="contact-copy reveal">
+          <p class="section-tag">ENTRE EM CONTATO</p>
+          <h2>Vamos abrir o portal da sua evolução</h2>
+          <p>
+            Este formulário já está preparado visualmente para a futura integração real com endpoint,
+            automação, email, CRM, GA4 e Meta Pixel.
+          </p>
+
+          <div class="contact-notes">
+            <div class="contact-note">
+              <strong>GA4:</strong>
+              <span>espaço reservado para eventos de clique e lead</span>
+            </div>
+            <div class="contact-note">
+              <strong>Pixel:</strong>
+              <span>estrutura pronta para PageView e Lead</span>
+            </div>
+            <div class="contact-note">
+              <strong>Formulário:</strong>
+              <span>interface pronta para integrar com Formspree, Web3Forms ou backend próprio</span>
+            </div>
+          </div>
+        </div>
+
+        <!--
+          FORMULÁRIO:
+          Neste momento ele está em "modo demonstração".
+          Depois vamos trocar a action ou o envio JS para um endpoint real.
+        -->
+        <form class="contact-form reveal delay-1" id="contactForm" novalidate>
+          <div class="form-group">
+            <label for="name">Nome</label>
+            <input type="text" id="name" name="name" placeholder="Seu nome" required />
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="voce@email.com" required />
+          </div>
+
+          <div class="form-group">
+            <label for="interest">Objetivo</label>
+            <select id="interest" name="interest" required>
+              <option value="">Selecione</option>
+              <option value="iniciar">Começar do zero</option>
+              <option value="aprimorar">Aprimorar habilidades</option>
+              <option value="freelancer">Criar projetos e freelas</option>
+              <option value="carreira">Migrar para carreira tech</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Mensagem</label>
+            <textarea
+              id="message"
+              name="message"
+              rows="5"
+              placeholder="Me conte onde você está e onde quer chegar..."
+              required
+            ></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-full">Enviar mensagem</button>
+
+          <p class="form-feedback" id="formFeedback" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© 2026 CyberWizards. Todos os direitos reservados.</p>
+      <a href="#hero">Voltar ao topo</a>
+    </div>
+  </footer>
+
+  <!-- ARQUIVO JAVASCRIPT -->
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Obrigado | CyberWizards</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      text-align: center;
+    }
+
+    .thanks-box {
+      max-width: 600px;
+      padding: 2rem;
+      border-radius: 20px;
+      background: rgba(13, 16, 24, 0.8);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .thanks-box h1 {
+      font-family: "Cinzel", serif;
+      margin-bottom: 1rem;
+    }
+
+    .thanks-box p {
+      color: #b9c0d0;
+      margin-bottom: 1.5rem;
+    }
+  </style>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=SEU_ID"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-HTSLSJSE53');
+  </script>
+  // Dispara evento de conversão ao carregar a página
+  <script>
+    if (typeof gtag === "function") {
+
+      // Verifica se já enviou lead nesta sessão
+      if (!sessionStorage.getItem("lead_sent")) {
+
+        gtag('event', 'lead', {
+          page_location: window.location.href
+        });
+
+        // Marca como enviado
+        sessionStorage.setItem("lead_sent", "true");
+      }
+    }
+  </script>
+  </script>
+</head>
+
+<body>
+
+  <div class="thanks-box">
+    <h1>✨ Sua jornada começou</h1>
+
+    <p>
+      Recebemos sua mensagem. Em breve você será contatado para dar o próximo passo na sua evolução como desenvolvedor.
+    </p>
+
+    <a href="index.html" class="btn btn-primary">
+      Voltar para o site
+    </a>
+  </div>
+
+</body>
+
+</html>
