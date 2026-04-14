@@ -48,14 +48,18 @@
     (function () {
       if (typeof gtag !== "function") return;
 
-      // Usa localStorage (mais forte que sessionStorage)
-      if (!localStorage.getItem("lead_sent")) {
+      const currentUrl = window.location.href;
+
+      // Cria chave única por URL
+      const key = "lead_sent_" + currentUrl;
+
+      if (!sessionStorage.getItem(key)) {
 
         gtag('event', 'lead', {
-          page_location: window.location.href
+          page_location: currentUrl
         });
 
-        localStorage.setItem("lead_sent", "true");
+        sessionStorage.setItem(key, "true");
       }
     })();
   </script>
