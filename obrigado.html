@@ -45,21 +45,21 @@
 
   <!-- Dispara evento de conversão ao carregar a página -->
   <script>
-    if (typeof gtag === "function") {
+    (function () {
+      if (typeof gtag !== "function") return;
 
-      // Verifica se já enviou lead nesta sessão
-      if (!sessionStorage.getItem("lead_sent")) {
+      // Usa localStorage (mais forte que sessionStorage)
+      if (!localStorage.getItem("lead_sent")) {
 
         gtag('event', 'lead', {
           page_location: window.location.href
         });
 
-        // Marca como enviado
-        sessionStorage.setItem("lead_sent", "true");
+        localStorage.setItem("lead_sent", "true");
       }
-    }
+    })();
   </script>
-  </script>
+
 </head>
 
 <body>
