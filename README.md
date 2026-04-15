@@ -77,5 +77,5 @@ Durante o desenvolvimento, foram trabalhados conceitos importantes como:
 - Testes A/B de conversão
 - Versão com React / Next.js
 
-👨‍💻 Autor
+👨‍💻 Autor:
 Gabriel B.
