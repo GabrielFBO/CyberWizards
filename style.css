@@ -1,17 +1,11 @@
-/* =========================================================
-   RESET BÁSICO
-   Remove diferenças iniciais entre navegadores
-========================================================= */
+/* RESET */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* =========================================================
-   VARIÁVEIS DE COR E TIPOGRAFIA
-   Facilita trocar identidade visual depois
-========================================================= */
+/* VARIÁVEIS DE COR E TIPOGRAFIA */
 :root {
   --bg-main: #06070b;
   --bg-soft: #0c0f17;
@@ -42,9 +36,7 @@
   --transition: 0.35s ease;
 }
 
-/* =========================================================
-   BASE DO DOCUMENTO
-========================================================= */
+/* BASE */
 html {
   scroll-behavior: smooth;
 }
@@ -61,9 +53,7 @@ body {
   position: relative;
 }
 
-/* =========================================================
-   ELEMENTOS DE FUNDO
-========================================================= */
+/* BACKGROUNDS */
 .page-grid {
   position: fixed;
   inset: 0;
@@ -99,17 +89,13 @@ body {
   background: rgba(81, 255, 156, 0.17);
 }
 
-/* =========================================================
-   CONTAINER
-========================================================= */
+/* CONTAINER */
 .container {
   width: min(100% - 2rem, var(--container));
   margin-inline: auto;
 }
 
-/* =========================================================
-   HEADER
-========================================================= */
+/* HEADER */
 .site-header {
   position: sticky;
   top: 0;
@@ -164,9 +150,7 @@ body {
   color: var(--green);
 }
 
-/* =========================================================
-   BOTÕES
-========================================================= */
+/* BUTTONS */
 .btn {
   display: inline-flex;
   align-items: center;
@@ -223,9 +207,7 @@ body {
   width: 100%;
 }
 
-/* =========================================================
-   HERO
-========================================================= */
+/* HERO */
 .hero {
   padding: 7rem 0 4rem;
   position: relative;
@@ -299,7 +281,7 @@ body {
   color: var(--green);
 }
 
-/* Imagem do mago com efeitos de brilho e profundidade */
+/* EFEITOS DE IMAGEM */
 
 .hero-image {
   width: 100%;
@@ -307,12 +289,10 @@ body {
   border-radius: 24px;
   display: block;
 
-  /* Glow mágico */
   box-shadow:
     0 0 60px rgba(166, 108, 255, 0.25),
     0 0 80px rgba(81, 255, 156, 0.15);
 
-  /* leve profundidade */
   transform: perspective(1000px) rotateY(-5deg);
 
   transition: transform 0.4s ease, box-shadow 0.4s ease;
@@ -326,9 +306,7 @@ body {
     0 0 100px rgba(81, 255, 156, 0.25);
 }
 
-/* =========================================================
-   VISUAL HERO
-========================================================= */
+/* HERO VISUAL */
 .hero-visual {
   position: relative;
   min-height: 540px;
@@ -469,9 +447,7 @@ body {
   animation-delay: 1.2s;
 }
 
-/* =========================================================
-   SEÇÕES
-========================================================= */
+/* SECTIONS */
 .section {
   padding: 5.5rem 0;
 }
@@ -502,9 +478,7 @@ body {
   color: var(--text-soft);
 }
 
-/* =========================================================
-   CARDS
-========================================================= */
+/* CARDS */
 .feature-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -556,9 +530,7 @@ body {
   color: var(--text-soft);
 }
 
-/* =========================================================
-   TIMELINE
-========================================================= */
+/* TIMELINE */
 .timeline {
   display: grid;
   gap: 1rem;
@@ -593,9 +565,7 @@ body {
   color: var(--text-soft);
 }
 
-/* =========================================================
-   BENEFITS
-========================================================= */
+/* BENEFITS */
 .benefits-grid,
 .contact-grid {
   display: grid;
@@ -648,9 +618,7 @@ body {
   color: var(--text-muted);
 }
 
-/* =========================================================
-   CTA
-========================================================= */
+/* CTA */
 .cta-box {
   padding: 2rem;
   text-align: center;
@@ -659,9 +627,7 @@ body {
     0 0 50px rgba(166, 108, 255, 0.08);
 }
 
-/* =========================================================
-   CONTATO / FORM
-========================================================= */
+/* CONTACT AND FORM */
 .contact-notes {
   display: grid;
   gap: 0.9rem;
@@ -732,9 +698,7 @@ body {
   color: var(--green);
 }
 
-/* =========================================================
-   FOOTER
-========================================================= */
+/* FOOTER */
 .site-footer {
   padding: 1.3rem 0 2rem;
 }
@@ -762,9 +726,7 @@ body {
   transition: all var(--transition);
 }
 
-/* =========================================================
-   PARTÍCULAS FLUTUANTES
-========================================================= */
+/* FLOATING PARTICLES */
 .floating-particles {
   position: fixed;
   inset: 0;
@@ -820,7 +782,7 @@ body {
     0 0 40px rgba(37, 211, 102, 0.4);
 }
 
-/* Animação do ícone do WhatsApp (pulsar) */
+/* PULSE ANIMATION WHATSAPP */
 .whatsapp-float {
   animation: pulseWhats 2.5s infinite;
 }
@@ -837,9 +799,7 @@ body {
   }
 }
 
-/* =========================================================
-   ANIMAÇÕES DE ENTRADA
-========================================================= */
+/* REVEAL ANIMATION */
 .reveal {
   opacity: 0;
   transform: translateY(22px);
@@ -859,9 +819,7 @@ body {
   transition-delay: 0.22s;
 }
 
-/* =========================================================
-   KEYFRAMES
-========================================================= */
+/* KEYFRAMES */
 @keyframes spin {
   from {
     transform: rotate(0deg);
@@ -894,9 +852,7 @@ body {
   }
 }
 
-/* =========================================================
-   RESPONSIVIDADE
-========================================================= */
+/* RESPONSIVE */
 @media (max-width: 1000px) {
 
   .hero-grid,

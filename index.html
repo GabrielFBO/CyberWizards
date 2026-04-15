@@ -4,30 +4,14 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <!--
-    TÍTULO SEO:
-    É o texto que aparece na aba do navegador e ajuda no Google.
-  -->
   <title>CyberWizards | Academia Virtual de Web Development</title>
-
-  <!--
-    META DESCRIPTION:
-    Resumo da página para mecanismos de busca e compartilhamentos.
-  -->
   <meta name="description"
     content="CyberWizards é uma academia virtual de desenvolvimento web completo. Aprenda HTML, CSS, JavaScript, responsividade, projetos reais e evolua para nível expert." />
-
-  <!--
-    PALAVRAS-CHAVE:
-    Hoje têm pouco peso em SEO, mas podem ser usadas em projetos didáticos.
-  -->
   <meta name="keywords"
     content="web development, curso de programação, html css javascript, academia virtual, front-end, desenvolvimento web" />
 
   <!--
     TWITTER / X CARD:
-    Mesma lógica do Open Graph, mas voltado para o X/Twitter.
   
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="CyberWizards | Academia Virtual de Web Development" />
@@ -36,31 +20,25 @@
   <meta name="twitter:image" content="https://seudominio.com/og-image.jpg" />
   -->
 
-  <!--
-    FONTS:
-    Cinzel = elegante e com ar gótico, mas ainda legível.
-    Inter = ótima para leitura no corpo do site.
-  -->
+  <!-- FONTES: Cinzel e Inter.-->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
     href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Inter:wght@400;500;600;700;800&display=swap"
     rel="stylesheet" />
-
-  <!-- ARQUIVO DE ESTILOS -->
   <link rel="stylesheet" href="style.css" />
 
   <!-- FAVICON -->
   <link rel="icon" type="image/png" href="imagens/orb.png">
 
-  <!-- OPEN GRAPH: Controla como a página aparece ao ser compartilhada em WhatsApp, Facebook e LinkedIn.-->
+  <!-- OPEN GRAPH -->
   <meta property="og:title" content="CyberWizards | Academia de Desenvolvimento Web">
   <meta property="og:description" content="Aprenda desenvolvimento web do zero ao profissional com projetos reais.">
   <meta property="og:image" content="https://cyber-wizards.vercel.app/imagens/og-wizard.png">
   <meta property="og:url" content="https://cyber-wizards.vercel.app/">
   <meta property="og:type" content="website">
 
-  <!-- Google Analytics (GA4) -->
+  <!-- GA4 -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-HTSLSJSE53"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -73,12 +51,9 @@
   </script>
 
   <!--
-    ============================
-    ESPAÇO RESERVADO PARA META PIXEL
-    ============================
-    Quando formos configurar, entra aqui o script oficial do Pixel.
-
-    Exemplo:
+    ===========
+    META PIXEL
+    ===========
     <script>
       !function(f,b,e,v,n,t,s){...}
       fbq('init', '1234567890');
@@ -86,11 +61,7 @@
     </script>
   -->
 
-  <!--
-    SCHEMA / JSON-LD:
-    Ajuda mecanismos de busca a entenderem melhor o tipo do seu projeto.
-    Aqui usamos "EducationalOrganization" porque faz sentido para uma academia virtual.
-  -->
+  <!-- SCHEMA / JSON-LD:  -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -105,19 +76,10 @@
 </head>
 
 <body>
-  <!--
-    FUNDO DECORATIVO:
-    Esses elementos ajudam a criar o clima de magia + cibernética.
-    Eles não são conteúdo principal; são elementos visuais.
-  -->
   <div class="page-glow glow-1"></div>
   <div class="page-glow glow-2"></div>
   <div class="page-grid"></div>
 
-  <!--
-    PARTÍCULAS FLUTUANTES:
-    O JavaScript criará pequenos orbes/runas digitais dinamicamente aqui dentro.
-  -->
   <div class="floating-particles" id="floatingParticles" aria-hidden="true"></div>
 
   <!-- CABEÇALHO FIXO -->
@@ -140,14 +102,7 @@
   </header>
 
   <main>
-    <!--
-      HERO SECTION:
-      A primeira dobra precisa explicar rapidamente:
-      - o que é
-      - para quem é
-      - qual transformação entrega
-      - qual ação o usuário deve tomar
-    -->
+    <!-- HERO -->
     <section class="hero" id="hero">
       <div class="container hero-grid">
         <div class="hero-copy reveal">
@@ -177,11 +132,7 @@
           </ul>
         </div>
 
-        <!--
-          CARD VISUAL DA HERO:
-          Serve para enriquecer a LP sem precisar de imagem externa.
-          Ele passa a sensação de painel / grimório tecnológico.
-        -->
+        <!-- HERO VISUAL CARD -->
         <div class="hero-visual reveal delay-1" aria-hidden="true">
           <img src="imagens/wizard.png" alt="Cyber Wizard" class="hero-image">
 
@@ -189,7 +140,7 @@
       </div>
     </section>
 
-    <!-- SOBRE -->
+    <!-- ABOUT -->
     <section class="section" id="about">
       <div class="container">
         <div class="section-heading reveal">
@@ -224,7 +175,7 @@
       </div>
     </section>
 
-    <!-- TRILHA -->
+    <!-- PATH -->
     <section class="section section-alt" id="journey">
       <div class="container">
         <div class="section-heading reveal">
@@ -268,7 +219,7 @@
       </div>
     </section>
 
-    <!-- BENEFÍCIOS -->
+    <!-- BENEFITS -->
     <section class="section" id="benefits">
       <div class="container benefits-grid">
         <div class="benefits-copy reveal">
@@ -321,7 +272,7 @@
       </div>
     </section>
 
-    <!-- CONTATO -->
+    <!-- CONTACT -->
     <section class="section section-alt" id="contact">
       <div class="container contact-grid">
         <div class="contact-copy reveal">
@@ -348,11 +299,7 @@
           </div>
         </div>
 
-        <!--
-          FORMULÁRIO:
-          Neste momento ele está em "modo demonstração".
-          Depois vamos trocar a action ou o envio JS para um endpoint real.
-        -->
+        <!-- FORM -->
         <form class="contact-form reveal delay-1" id="contactForm" novalidate>
           <div class="form-group">
             <label for="name">Nome</label>
@@ -388,9 +335,7 @@
       </div>
     </section>
   </main>
-  <!-- FLUTUANTE DE WHATSAPP:
-  Um botão fixo no canto inferior direito para facilitar o contato via WhatsApp.
-  O link já vem com uma mensagem pré-definida para agilizar a conversa. -->
+  <!-- FLOATING WHATSAPP -->
   <a href="https://wa.me/5561983625707?text=Olá,%20quero%20me%20tornar%20um%20mago%20do%20web%20coding%20com%20a%20CyberWizards!"
     class="whatsapp-float" target="_blank" aria-label="Fale conosco no WhatsApp">
 
@@ -407,7 +352,7 @@
     </div>
   </footer>
 
-  <!-- ARQUIVO JAVASCRIPT -->
+  <!-- JAVASCRIPT -->
   <script src="script.js"></script>
 </body>
 

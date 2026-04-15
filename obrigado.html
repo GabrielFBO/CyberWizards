@@ -43,14 +43,14 @@
     gtag('config', 'G-HTSLSJSE53');
   </script>
 
-  <!-- Dispara evento de conversão ao carregar a página -->
+  <!-- LEAD EVENT -->
   <script>
     (function () {
       if (typeof gtag !== "function") return;
 
       const currentUrl = window.location.href;
 
-      // Cria chave única por URL
+      // ONE SHOT FOR URL
       const key = "lead_sent_" + currentUrl;
 
       if (!sessionStorage.getItem(key)) {
